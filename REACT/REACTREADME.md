@@ -4,7 +4,7 @@
  Why React?
 
 -   React was developed to handle the complexity of building user interfaces in JavaScript for modern, fast-paced web applications.
-$\color {GREEN}{JSX is a syntax extension, while React is a JavaScript library.}$
+$\color {GREEN}{JSX is JavaScript Syntax Extension, while React is a JavaScript library.}$
 #### What is React?
 
 -   React is a JavaScript $\color{green}{library}$ for building user interfaces. It is particularly useful for developing single-page applications.
@@ -128,4 +128,39 @@ also we can named the named imports for exxample:
 +How to import and export a component
 +When and how to use default and named imports and exports
 +How to export multiple components from the same file
+```
+ [Create React App](https://create-react-app.dev/) 
+
+ - Vercel released [Next.js](https://nextjs.org/)
+
+ - [Gatsby.js](https://www.gatsbyjs.com/) 
+ - [Remix.run](https://remix.run/) 
+ - [Vite](https://vitejs.dev/)
+
+ 
+```bash
+npm create vite@latest
+```
+```bash
+cd job-app-tracker
+npm install
+npm run dev
+```
+- for app  `npx create-react-app my-app`
+- for latest version `npm install react-scripts@latest`
+
+
+- [React: Quick Start](https://react.dev/learn)
+- [React: Developer Tools](https://react.dev/learn/react-developer-tools)
+- [React: Describing the UI](https://react.dev/learn/describing-the-ui)
+- [React: Your First Component](https://react.dev/learn/your-first-component)
+- [React: Importing and Exporting Components](https://react.dev/learn/importing-and-exporting-components)
+- [React: Writing Markup with JSX](https://react.dev/learn/writing-markup-with-jsx)
+- [The Beginner's Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)
+
+
+$\color {lightblue}{Functions starting with use are called Hooks}$
+
+```
+React is a JavaScript library for rendering user interfaces (UI). UI is built from small units like buttons, text, and images. React lets you combine them into reusable, nestable components.
 ```
