@@ -61,3 +61,10 @@ Tailwind includes utilities for many other CSS features, like:
 - [Tailwind CSS Installation Guide](https://tailwindcss.com/docs/installation)
 - [Tailwind CSS Utility Classes](https://tailwindcss.com/docs/utility-first)
 - [Vite Documentation](https://vitejs.dev/guide/)
+
+Hook
+```
+import { useState } from "react";
+const [selectedStatus, setSelectedStatus] = useState(1);
+setSelectedStatus(141)=> selectedStatus=141;
+```

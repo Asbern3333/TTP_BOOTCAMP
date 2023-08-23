@@ -1,19 +1,15 @@
-
-
-
- Why React?
-
--   React was developed to handle the complexity of building user interfaces in JavaScript for modern, fast-paced web applications.
+Why React?
+- React was developed to handle the complexity of building user interfaces in JavaScript for modern, fast-paced web applications.
 $\color {GREEN}{JSX is JavaScript Syntax Extension, while React is a JavaScript library.}$
 #### What is React?
 
--   React is a JavaScript $\color{green}{library}$ for building user interfaces. It is particularly useful for developing single-page applications.
+- React is a JavaScript $\color{green}{library}$ for building user interfaces. It is particularly useful for developing single-page applications.
 
 The Web has been built on HTML, CSS, and JavaScript. For many years, web developers kept content in HTML, design in CSS, and logic in JavaScript—often in separate files! Content was marked up inside HTML while the page’s logic lived separately in JavaScript:
 
 #### What are Components?
--   Components are the fundamental building blocks of a React application's user interface.
--   In React, a component is a reusable piece of code that dictates a portion of the UI.
+- Components are the fundamental building blocks of a React application's user interface.
+- In React, a component is a reusable piece of code that dictates a portion of the UI.
 
 $\color{green}{test}$
 
@@ -55,6 +51,7 @@ for javascripte function
   }
 }>
 ```
+
 ```
 const person = {
   name: 'Gregorio Y. Zara',
@@ -64,12 +61,6 @@ const person = {
   }
 };
 ```
-
-
-
-
-
-
 
 ```diff
 RECAP
@@ -83,7 +74,6 @@ Now you know almost everything about JSX:
 +React components group rendering logic together with markup because they are related.
 +JSX is similar to HTML, with a few differences. You can use a converter if you need to.
 +Error messages will often point you in the right direction to fixing your markup.
-
 ```
 
 ## 3. **Creating a React Component**
@@ -161,6 +151,6 @@ npm run dev
 
 $\color {lightblue}{Functions starting with use are called Hooks}$
 
-```
+```md
 React is a JavaScript library for rendering user interfaces (UI). UI is built from small units like buttons, text, and images. React lets you combine them into reusable, nestable components.
 ```
