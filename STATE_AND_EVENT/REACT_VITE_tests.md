@@ -276,3 +276,19 @@ To fix this, let's install some eslint plugins and configure them.
 - [Vitest Documentation](https://github.com/vitest-dev/vitest)
 - [Testing Library Documentation](https://testing-library.com/docs/react-testing-library/intro/)
 - [Vite Documentation](https://vitejs.dev/guide/)
+
+
+import { render, screen } from '@testing-library/react';
+import App from './App';
+```js
+test('renders button group correctly', () => {
+  render(<App />);
+
+  expect(screen.getByRole('button', { name: 'Bookmarked' })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Applying' })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Applied' })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Interviewing' })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Negotiating' })).toBeInTheDocument();
+  expect(screen.getByRole('button', { name: 'Accepted' })).toBeInTheDocument();
+});
+```
