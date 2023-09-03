@@ -42,8 +42,9 @@ You can leave the postcss config file as is.
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 ```
+5. `<link href="./src/main.css" rel="stylesheet">`
 
-5. run `npm run dev` in your terminal
+6. run `npm run dev` in your terminal
 
 
 ### Exploring More Complex Tailwind CSS Utilities (10 minutes)

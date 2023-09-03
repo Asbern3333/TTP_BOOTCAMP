@@ -45,4 +45,14 @@ export default function ErrorPage() {
       </p>
     </div>
   );
-}```
+}
+```
+```bash
+npm create vite@latest name-of-your-project -- --template react
+# follow prompts
+cd <your new project directory>
+npm install react-router-dom localforage match-sorter sort-by
+npm run dev
+```
+
+
