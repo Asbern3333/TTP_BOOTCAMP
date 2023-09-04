@@ -69,10 +69,11 @@ Git pull
 `git pull`, `git fetch && git merege`, `git stash`
 
 
-```
+```js
 I donto need it
 Rename your local master branch into main with the following command:
 $ git branch --move master main.
 $ git push --set-upstream origin main.
 $ git branch --all * main remotes/origin/HEAD -> origin/master remotes/origin/main remotes/origin/master.
-$ git push origin --delete master.```
+$ git push origin --delete master.
+```
