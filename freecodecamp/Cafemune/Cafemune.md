@@ -2,9 +2,11 @@
 `Style` elements it should go to header file
 inside it 
 element is  type selector(h1)
+```css
 element {
  property: value;
 }
+```
 for example
 
 ```html
@@ -94,9 +96,8 @@ Add the fallback font serif after the Impact font.
  ```
 # border-color
 Make all the edges of the `hr` element the same color as the background of it using the `border-color` property.
- The default value of a property named `border-width` is` 1px `
+ The default value of a property named `border-width` is`1px`
  ` the top and bottom border width of 1px`.
-
 # top - down spaces
 ```css
 margin-top:5px;
@@ -133,3 +134,4 @@ display:block;
 margin-left:auto;
 margin-right:auto;
 ```
+
