@@ -128,10 +128,12 @@ Clicking the link
 ```css
 a:active { propertyName: propertyValue; }.
 ```
-# Idonto know it doesnot work without display
+#  display
 ```css
 display:block;
 margin-left:auto;
 margin-right:auto;
 ```
+This is because the default `display` property for div elements is `block`. So when **two block elements are next to each other**, they stack like actual `blocks`. For example, your marker elements are all stacked on top of each other.
 
+To position two div elements on the same line, set their display properties to `inline-block`.

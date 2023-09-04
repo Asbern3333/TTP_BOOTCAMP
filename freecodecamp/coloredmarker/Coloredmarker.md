@@ -23,22 +23,22 @@ Multiple classes can be added to an element by listing them in the `class` attri
 RGB (red, green, blue)
 - 0 mean 0%
 - 255 mean 100%
-- $\color{green}{green rgb(0,255,0)}$
-- $\color{blue}{blue rgb(0,0,255)}$
-- $\color{red}{red rgb(255,0,0)}$
-- $\color{black}{black rgb(0,0,0)}$
-- $\color{white}{white rgb(255,255,255)}$
-- $\color{yellow}{yellow rgb(255,255,0)}$
-- $\color{cyan}{cyan rgb(0, 255, 255)}$
-- $\color{magenta}{magenta rgb(255,0,255)}$
-- $\color{orange}{orange rgb(255,127,0)}$
-- $\color{springgreen}{spring green rgb(0, 255, 127)}$
-- $\color{violet}{violet rgb(127,0,255)}$
-- $\color{chartreusegreen}{chartreuse green rgb(127,255,0)}$
-- $\color{azure}{azure rgb(0,127,255)}$
-- $\color{rose}{rose rgb(255, 0, 127);}$
+- <span style="color:rgb(255,0,0);">red rgb(255,0,0)  pure</span>.
+- <span style="color:rgb(0,255,0);">pure green color rgb(0,255,0)</span>.
+- <span style="color:rgb(0,0,255);">pure blue rgb (0,0,255) color</span>.
+- <span style="color:rgb(0,0,0);"> black rgb (0,0,0) color</span>.
+- <span style="color:rgb(255,255,255);"> white rgb (255,255,255) color</span>.
+- <span style="color:rgb(255,255,0);"> yallow rgb (255,255,0) color</span>.
+- <span style="color:rgb(0,255,255);"> cyan rgb (0,255,255) color</span>.
+- <span style="color:rgb(255,0,255);"> Magenta rgb (255,0,255) color</span>.
+- <span style="color:rgb(255,127,0);"> Orange rgb (255,255,255) color</span>.
+- <span style="color:rgb(0,255,127);"> Springgreen rgb (255,255,255) color</span>.
+- <span style="color:rgb(127,0,255);"> violet rgb (127,0,255) color</span>.
+- <span style="color:rgb(127,255,0);">chartreuse green rgb(127,255,0)</span>.
+- <span style="color:rgb(0,127,255);"> azure rgb(0,127,255)</span>.
+- <span style="color:rgb(255,0,127);"> rose rgb(255, 0, 127);</span>.
+$\color{green}{color green}$
 
-$\color{green}{test}$
 # Padding
 `padding:10px 0;`
 
@@ -91,3 +91,72 @@ One thing to remember is that the `linear-gradient` function actually creates an
 
 - `gradientDirection` is the direction of the line used for the transition.
 - `color1` and `color2 `are color arguments, which are the colors that will be used in the transition itself. These can be any type of color, including color keywords, hex, `rgb`, or `hsl.`
+
+# mixed color transition
+- <span style=" background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0));">red &green</span> 
+- <span style="background:linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0),rgb(0,0,255));"> You can use as many as you want color</span> 
+# Control the color 
+we can `number%` after the color to control how much you want the color
+## controling the length of each color
+-  <span style="background:linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0),rgb(0,0,255));"> You can use as many as you want color</span> 
+## Control the degree of the colors
+You can do that by changing the degree of the `linear-gradient` 
+-  <span style="background:linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0),rgb(0,0,255));"> You can use as many as you want color</span> 
+-  <span style="background:linear-gradient(180deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0),rgb(0,0,255));"> You can use as many as you want color</span> 
+-  <span style="background:linear-gradient(270deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0),rgb(0,0,255));"> You can use as many as you want color</span> 
+
+# Shadow of colors
+Now that the color-stops are set, you'll apply different shades of red to each color argument in the linear-gradient function. The shades on the top and bottom edges of the marker will be darker, while the one in the middle will be lighter, as if there's a light above it.
+-  <span style="background:  linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27))"> You can use as many as you want color</span> 
+-  <span style="background: linear-gradient(180deg, #55680D, #71F53E, #116C31);"> You can use as many as you want color</span> 
+-  <span style="background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%))"> You can use as many as you want color</span> 
+
+# Opacity
+- Opacity is control how much the light go through the color
+We should add another class to the element then:
+```css
+.newclass {
+  width: 110px;
+  height: 25px;
+  background-color: white;
+  opacity:0.5
+}
+```
+# How much the light go through the color(Withalpha)
+
+ ## RGBA
+ rgba(redValue, greenValue, blueValue, alphaValue);
+ rgba(255,255,255,0.5) ALPHA FROM 0->1 0->100%
+
+
+# boarder-color
+border-left: 10px double rgba(0,0,0,0.75);
+border-left: width style color;
+
+# Box Shadow
+`box-shadow: offsetX offsetY color;`
+
+OR
+
+`box-shadow: offsetX offsetY blurRadius color;`
+
+OR
+
+`box-shadow: offsetX offsetY blurRadius spreadRadius color;`
+- both offsetX and offsetY accept number values in px and other CSS units
+- a positive offsetX value moves the shadow right and a negative value moves it left
+- a positive offsetY value moves the shadow down and a negative value moves it up
+- if you want a value of zero (0) for any or both offsetX and offsetY, you don't need to add a unit. Every browser understands that zero means no change.
+
+<span style="background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow: 5px 5px red;"> You can use minus numbered box-shadow: 5px 5px red;</span>
+
+<span style="background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow: 5px 5px 5px red;"> ADding blur making it 5px 5px 5px red;</span> 
+
+<span style="background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow:0 0 0 5px red;"> ADding blur making it 5px 5px 5px red;</span>
+   
+<span style="background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+  box-shadow:0 0 20px 0 red;"> ADding blur making it 5px 5px 5px red;</span> 
+
