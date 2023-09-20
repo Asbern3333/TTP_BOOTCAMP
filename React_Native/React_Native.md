@@ -63,7 +63,6 @@ const Cat = props => {
     </View>
   );
 };
-
 const Cafe = () => {
   return (
     <View>
