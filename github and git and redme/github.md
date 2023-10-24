@@ -77,3 +77,13 @@ $ git push --set-upstream origin main.
 $ git branch --all * main remotes/origin/HEAD -> origin/master remotes/origin/main remotes/origin/master.
 $ git push origin --delete master.
 ```
+
+
+
+
+# To get other branches
+`git fetch` the get the updates
+`git branch -a` to see the current branch with the other branches
+` git branch -r` to see all branches without what I have
+`git checkout -b aishadev origin/aishadev` to get a specific branch
+`git branch -vv` to see all branches with commits
