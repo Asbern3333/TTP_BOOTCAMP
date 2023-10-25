@@ -18,5 +18,31 @@ To solve this, reset the box model by creating a `*` selector and giving it a `b
 
 # control the visual flow
 However, you can adjust the CSS of these elements to control the visual flow and hierarchy
-set the `font-weight` property to `800`
+set the `font-weight` property to `800` for bold text
 
+# Nigative number
+ We can do `margin:-4px;`
+## remove margin
+`Margin=0` or `nigative`
+
+ # letter-spacing
+ The `letter-spacing `property can be used to adjust the space between each character of text in an element
+
+# Rem
+The `rem` unit stands for `root em`, and is relative to the font size of the `html` element.
+
+# Info
+Create a `.daily-value p` selector to target all of your `p` elements in the `daily-value` section. 
+
+
+# :NOT
+    The `:not` pseudo-selector can be used to select all elements that do not match the given CSS rule.
+
+```css
+div:not(#example) {
+  color: red;
+}
+```
+The above selects all div elements without an id of example.
+
+Modify your .daily-value p selector to exclude the .no-divider elements.
