@@ -38,3 +38,24 @@ html-questions
 css-questions
 ```
 Then, within each section element, nest one `h2` element with an id matching the corresponding `aria-labelledby` attribute. Give each `h2` suitable text content.
+
+
+# Connect inside the page
+I can give an element an id and I can do a link for that id by doing <a href="#">
+
+# mutliple selector
+`nav li or nav > ul > li`
+
+
+# remove the underline of the link
+`text-decoration: "none";`
+
+# Keep header up top
+`position:fixed ` can make the header move with it
+`top:0;` to do the poistion for the header
+
+# stop over flow
+`flex-wrap:wrap;`
+On small screens, the unordered list in the navigation bar overflows the right side of the screen.
+
+
