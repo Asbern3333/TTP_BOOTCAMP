@@ -87,3 +87,14 @@ $ git push origin --delete master.
 ` git branch -r` to see all branches without what I have
 `git checkout -b aishadev origin/aishadev` to get a specific branch
 `git branch -vv` to see all branches with commits
+
+
+# Ignoring file
+Open the `.gitignore` file in your project's root directory. If it doesn't exist, create it.
+2. Add the following line to the file:
+   ```
+   nameoffile
+   .env
+   node_modules
+   ```
+   3. Save the file. The `.env` file is now ignored by Git (it should appear gray in the VSCode file explorer).
